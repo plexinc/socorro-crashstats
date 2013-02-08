@@ -11,6 +11,8 @@ import manage
 # FIXME funfactory should add this too
 site.addsitedir(os.path.abspath(
                 os.path.join(wsgidir, '../vendor-local/lib64/python')))
+site.addsitedir(os.path.abspath(
+                os.path.join(wsgidir, '../vendor-local/lib/python')))
 
 import django.core.handlers.wsgi
 application = django.core.handlers.wsgi.WSGIHandler()
