@@ -1,0 +1,14 @@
+Source: socorro-crashstats
+Section: misc
+Priority: optional
+Maintainer: Tobias Hieta <tobias@plexapp.com>
+Build-Depends: debhelper (>= 7), build-essential, python-virtualenv, subversion, libpq-dev, python-dev, python2.6, python2.6-dev, libxslt1-dev, git-core, mercurial
+Standards-Version: 3.8.3
+Homepage: http://www.plexapp.com
+
+Package: socorro-crashstats
+Architecture: i386 amd64
+Depends: socorro, apache2, libapache2-mod-wsgi
+Description: Mozilla Socorro
+  Breakpad website and crashdump collector
+
